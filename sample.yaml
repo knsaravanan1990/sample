@@ -1,0 +1,9 @@
+---
+- name: Play1
+  hosts: web1
+  vars:
+    name: This is testing AWX projects
+  tasks:
+     - name: print variables from cli
+       debug:
+         msg: "my name is {{ name }}"
